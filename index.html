@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ad7b368d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- this block is make for crating herader section -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="image/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <!-- this block is make for set the content on 1st page -->
+                <div class="heradr-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'M <span> Saroj </span> <br> Sharma From Delhi</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- this section is crate a about secton on the page-->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/user.png">
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p id="abo"> My name is Saroj Kumar Sharma, and I am currently pursuing a Bachelor's in Computer
+                            Applications (BCA) from GL Bajaj Institute of Management. I am passionate about computers
+                            and technology, and I have been actively involved in various programming projects during my
+                            academic journey. I have developed strong analytical and problem-solving skills through
+                            these experiences. Additionally, I have participated in extracurricular activities and have
+                            learned valuable lessons in time management and teamwork. I am enthusiastic about the future
+                            and excited to contribute to the field of computer applications. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                            <p class="tab-links " onclick="opentab('experiences')">Experiences </p>
+                            <p class="tab-links " onclick="opentab('education')">Education </p>
+                            <p class="tab-links " onclick="opentab('certification')">Certification </p>
+
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML5 & CSS3</span> <br>Font-End Developer</li>
+                                <li><span>Tailwind</span> <br>Design Webpage</li>
+                                <li><span>Flutter</span> <br>Android and ios app Design</li>
+                                <li><span>Java</span> <br>Full Stack java</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="experiences">
+                            <ul>
+                                <li><span>javaTpoint</span> <br>6th Month Experiences as a content writer.</li>
+                                <li><span>Technook</span> <br>3rd Month Experiences as a Campus Ambassador.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="education">
+                            <ul>
+                                <li><span>2018-2019</span> <br>10th From CBSE Bord.</li>
+                                <li><span>2020-2021</span> <br>12th From CBSE Bord.</li>
+                                <li><span>2021-2024</span> <br> Persuing BCA From Gl bajaj Institute of Management.</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="certification">
+                            <ul>
+                                <li><span>Google Cloud</span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- this is a Services  secton -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="serivces-list">
+                    <div>
+                        <img src="/image/code.png" class="sec">
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://github.com/sarojkumar2003">Learn more</a>
+                    </div>
+
+                    <div>
+                        <img src="/image/edit.png" class="sec">
+                        <h2>Graphic Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://www.canva.com/projects">Learn more</a>
+                    </div>
+
+                    <div>
+                        <img src="image/android.png" class="sec">
+                        <h2>Android Deverloper</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://github.com/sarojkumar2003">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Web Design</h3>
+                            <p>Here is the clone and parallex website i had created</p>
+                            <a href="https://github.com/sarojkumar2003"><img src="/image/link.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Graphic Design</h3>
+                            <p>Here is the clone and parallex website i had created</p>
+                            <a href="https://www.canva.com/projects"><img src="/image/link.png"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Android Development</h3>
+                            <p>Here is the clone and parallex website i had created</p>
+                            <a href="https://github.com/sarojkumar2003"><img src="image/link.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/sarojkumar2003" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-- this is contect secton -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contect-left">
+                        <h1 class="sub-title">Contect Me</h1>
+                        <p><img src="/image/send email.png">sarojkumarsharma2003@gmail.com</p>
+                        <p><img src="/image/phone-call.png">+91- 9540666691</p>
+                        <div class="socal-icons">
+                            <a href="https://www.linkedin.com/in/saroj-sharma/"><img src="/image/linkedin.png"></a>
+                            <a href="https://github.com/sarojkumar2003"><img src="/image/github.png"></a>
+                            <a href="https://www.instagram.com/sarojkumarsharma51/"><img src="/image/instagram.png"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100024221730794"><img src="/image/facebook.png"></a>
+                        </div>
+                        <a href="image/CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contect-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email id" placeholder="Your Email" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyrigth secton -->
+        <div class="copyright">
+            <p>Copyright &copy; By Saroj Kumar Sharma </p>
+        </div>
+
+    </div>
+
+
+
+    <!-- Here is the javascript  -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+    <!-- for side menue -->
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        } 
+    </script>
+
+    <!-- form script -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPkOgwpGQ4YtKkc57_cNW82wyYhFLBkZArPuQU4iRY0T5mJCWAU9peA8iPdVu08xqL/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                          msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
